@@ -1,5 +1,6 @@
 'use strict';
 
+var path = require('path');
 var M = require('master-class');
 
 function shuffle( array ){
@@ -15,6 +16,7 @@ function shuffle( array ){
 }
 
 module.exports = {
+  id: path.basename(__filename, '.js'),
   numOfPlayers: 4,
   MasterClass: M({
     props: {
