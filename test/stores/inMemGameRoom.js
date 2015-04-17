@@ -3,7 +3,7 @@
 var assert = require('assert');
 var gameRoomStore = require('../../lib/service/stores/inMemGameRoom')();
 
-describe('in memory based game room store', function () {
+describe.skip('in memory based game room store', function () {
   it('can save and retrieve game rooms by id', function () {
     var gameRoom = {};
     var gameRoomId = gameRoomStore.save(gameRoom);

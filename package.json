@@ -20,18 +20,20 @@
     "turn-based"
   ],
   "dependencies": {
-    "master-class": "^0.1.1"
+    "bluebird": "^2.9.24",
+    "master-class": "^0.1.1",
+    "require-dir": "^0.3.0"
   },
   "devDependencies": {
     "browserify": "^9.0.8",
     "grunt-cli": "^0.1.13",
-    "grunt-contrib-jshint": "^0.11.1",
+    "grunt-contrib-jshint": "^0.11.2",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-mocha-cli": "^1.13.0",
     "jshint-stylish": "^1.0.1",
     "load-grunt-tasks": "^3.1.0",
     "sinon": "^1.14.1",
-    "time-grunt": "^1.1.0"
+    "time-grunt": "^1.1.1"
   },
   "scripts": {
     "test": "grunt",

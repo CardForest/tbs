@@ -7,27 +7,31 @@ var noOpTransport = require('../../lib/shared/noOpTransport')();
 
 describe('no-operation transport', function () {
   it('can call client via proxy', function () {
-    var serviceSpy = sinon.spy();
+    var serviceSpy = sinon.spy(function(clientProxy) {
+      clientProxy.callClientSpy(2);
+    });
     var clientSpy = sinon.spy();
-    noOpTransport.setService({
-      onConnection: function (clientProxy) {
-        clientProxy.callClientSpy();
-      },
+
+    var service = {
       exports: {
         callServiceSpy: serviceSpy
       }
-    });
+    };
+    noOpTransport.setService(service);
 
-    var serviceProxy = noOpTransport.connect({
+    var client = {
       exports: {
         callClientSpy: clientSpy
       }
-    });
+    };
 
-    assert(clientSpy.calledOnce);
-
-    serviceProxy.callServiceSpy();
+    noOpTransport.connect(client).callServiceSpy(1);
 
     assert(serviceSpy.calledOnce);
+    assert(serviceSpy.firstCall.calledOn(service));
+    assert.deepEqual(serviceSpy.firstCall.args, [client.exports, 1]);
+
+    assert(clientSpy.calledOnce);
+    assert.deepEqual(clientSpy.firstCall.args, [2]);
   });
 });
