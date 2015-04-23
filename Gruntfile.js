@@ -6,6 +6,14 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
+    jsdoc : {
+      dist : {
+        src: ['lib/**/*.js'],
+        options: {
+          destination: 'doc'
+        }
+      }
+    },
     jshint: {
       options: {
         jshintrc: '.jshintrc',

@@ -3,7 +3,7 @@
 var assert = require('assert');
 var sinon = require('sinon');
 
-var noOpTransport = require('../../lib/shared/noOpTransport')();
+var noOpTransport = require('.././noOpTransport')();
 
 describe('no-operation transport', function () {
   it('can call client via proxy', function () {
