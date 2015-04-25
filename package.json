@@ -22,7 +22,9 @@
   "dependencies": {
     "bluebird": "^2.9.24",
     "events": "^1.0.2",
+    "lodash.forown": "^3.0.2",
     "master-class": "^0.1.1",
+    "object-assign": "^2.0.0",
     "require-dir": "^0.3.0"
   },
   "devDependencies": {
