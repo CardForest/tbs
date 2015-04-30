@@ -2,7 +2,7 @@
 
 var assert = require('assert');
 var path = require('path');
-var gameTypeStore = require('../../lib/service/stores/cjsGameType')(path.join(__dirname, 'gameTypes'));
+var gameTypeStore = require('.././stores/cjsGameType')(path.join(__dirname, 'gameTypes'));
 
 describe('CommonJS based game type store', function () {
   it('can retrieve game types by id', function (done) {

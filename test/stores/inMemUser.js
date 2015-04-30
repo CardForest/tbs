@@ -2,7 +2,7 @@
 
 var assert = require('assert');
 
-var userStore = require('../../lib/service/stores/inMemUser')();
+var userStore = require('.././stores/inMemUser')();
 
 describe('in memory based user store', function () {
   it('can create users and retrieve their profile by id game types by id', function (done) {

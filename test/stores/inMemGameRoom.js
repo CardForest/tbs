@@ -1,7 +1,7 @@
 'use strict';
 
 var assert = require('assert');
-var gameRoomStore = require('../../lib/service/stores/inMemGameRoom')();
+var gameRoomStore = require('.././stores/inMemGameRoom')();
 
 describe.skip('in memory based game room store', function () {
   it('can save and retrieve game rooms by id', function () {

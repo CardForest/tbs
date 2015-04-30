@@ -8,7 +8,7 @@ module.exports = function (grunt) {
   grunt.initConfig({
     jsdoc : {
       dist : {
-        src: ['lib/**/*.js'],
+        src: ['lib/*.js', 'lib/service/**/*.js', 'lib/client/**/*.js', 'lib/transport/**/*.js'],
         options: {
           destination: 'doc'
         }
