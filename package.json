@@ -21,9 +21,7 @@
   ],
   "dependencies": {
     "bluebird": "^2.9.25",
-    "lodash.forown": "^3.0.2",
-    "master-class": "^0.1.1",
-    "require-dir": "^0.3.0"
+    "master-class": "^0.1.1"
   },
   "devDependencies": {
     "browserify": "^10.0.0",
