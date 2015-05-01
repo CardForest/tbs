@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/CardForest/tbs.png?label=ready&title=Ready)](https://waffle.io/CardForest/tbs)
 #  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
 > Turn-based strategy.
