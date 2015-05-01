@@ -1,4 +1,4 @@
-#  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+#  [![Stories in Progress](https://badge.waffle.io/CardForest/tbs.png?label=In%20Progress&title=In%20Progress)](https://waffle.io/CardForest/tbs) [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
 > Turn-based strategy.
 
