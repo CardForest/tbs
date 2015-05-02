@@ -16,7 +16,7 @@ function shuffle(array) {
 }
 
 module.exports = {
-  id: path.basename(__filename, '.js'),
+  id: 'whist',//path.basename(__filename, '.js'),
   numOfPlayers: 4,
   MasterClass: M({
     props: {
@@ -49,8 +49,8 @@ module.exports = {
           for (i = 0; i < 13; i++) {
             this.players[0].cards[i] = deck[i];
             this.players[1].cards[i] = deck[i + 13];
-            this.players[2].cards[i] = deck[i + 26];
-            this.players[3].cards[i] = deck[i + 39];
+            //this.players[2].cards[i] = deck[i + 26];
+            //this.players[3].cards[i] = deck[i + 39];
           }
         }
       }),

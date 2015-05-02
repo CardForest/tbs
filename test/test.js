@@ -64,8 +64,6 @@ describe('tbs module', function () {
 
       client1.room.game.putDownCard(3);
       client2.room.game.putDownCard(0);
-      //assert.equal(client1.room.game, 'test-game-instance');
-      //assert.equal(client2.room.game, 'test-game-instance');
 
       done();
     });
