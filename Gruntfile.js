@@ -23,7 +23,7 @@ module.exports = function (grunt) {
         src: ['Gruntfile.js']
       },
       js: {
-        src: ['*.js']
+        src: ['*.js', 'lib/**/*.js', '!lib/transport/primus/generatedPrimusClient.js']
       },
       test: {
         src: ['test/**/*.js']
