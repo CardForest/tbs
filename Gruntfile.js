@@ -34,7 +34,7 @@ module.exports = function (grunt) {
         reporter: 'spec',
         bail: true
       },
-      all: ['test/*.js']
+      all: ['test/transport/primus.js']
     },
     watch: {
       gruntfile: {
@@ -52,5 +52,5 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('default', ['jshint', 'mochacli']);
+  grunt.registerTask('default', [/*'jshint', */'mochacli']);
 };
