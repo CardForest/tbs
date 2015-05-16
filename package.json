@@ -21,6 +21,7 @@
   ],
   "dependencies": {
     "bluebird": "^2.9.25",
+    "key-path": "^0.3.2",
     "master-class": "^0.2.0",
     "primus": "^3.0.2",
     "ws": "^0.7.1"
