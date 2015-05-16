@@ -17,7 +17,7 @@ function shuffle(array) {
 
 module.exports = {
   id: 'whist',//path.basename(__filename, '.js'),
-  numOfPlayers: 4,
+  numOfPlayers: 2,
   MasterClass: M({
     props: {
       currentPlayerIdx: M.Number(),
